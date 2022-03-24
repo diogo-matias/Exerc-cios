@@ -1,0 +1,39 @@
+body {
+  background-color: blue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.quadro-preto {
+  background-color: black;
+  height: 500px;
+  width: 700px;
+  padding: 5px;
+
+  position: relative;
+}
+
+.quadrado-esquerda {
+  background-color: rgb(255, 255, 255);
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+}
+.quadrado-direita {
+  background-color: rgb(255, 255, 255);
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
