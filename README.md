@@ -1,2 +1,2 @@
 # Exercios
-Repositório privado apenas para exercícios da aula.
+Repositório privado apenas para exercícios.
