@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.quadro-cinza {
+  background-color: grey;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.azul {
+  background-color: blue;
+  height: 90vh;
+  width: 90vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vermelho {
+  background-color: red;
+  height: 70vh;
+  width: 70vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preto {
+  background-color: black;
+  height: 50vh;
+  width: 50vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verde {
+  background-color: green;
+  height: 30vh;
+  width: 30vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amarelo {
+  background-color: yellow;
+  height: 15vh;
+  width: 15vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
