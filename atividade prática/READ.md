@@ -1,3 +1,3 @@
 # Preview Atividades
 
-<img src="preview(1)"/>
+<img src="./images/preview (1).png"/>
