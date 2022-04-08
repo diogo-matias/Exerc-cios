@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let valor_compra = 120;
+      let valor_pago = 150;
+      let diferenca = valor_compra - valor_pago;
+
+      if (diferenca > 0) {
+        document.write("Saldo devedor: $", diferenca.toFixed(2));
+      } else {
+        diferenca = diferenca * -1;
+        document.write("Troco: $", diferenca.toFixed(2));
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const valor_total = 250;
+      let parcelas = 4;
+      let valor_parcelas = valor_total / parcelas;
+
+      document.write(
+        "O valor total da compra é R$",
+        valor_total.toFixed(2),
+        "<br>"
+      );
+      document.write(
+        "Forma de pagamento: ",
+        parcelas,
+        "x de R$",
+        valor_parcelas.toFixed(2)
+      );
+    </script>
+  </body>
+</html>
