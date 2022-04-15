@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex4</title>
+  </head>
+  <body>
+    <script>
+      let ano = new Date().getFullYear();
+      console.log(ano);
+
+      anoNascimento = parseInt(prompt("Que ano você nasceu?"));
+      idade = ano - anoNascimento;
+
+      document.write(`Você tem ${idade} anos de idade. <br>`);
+
+      if (idade >= 16) {
+        if (idade < 18) {
+          document.write("Voto facultativo...");
+        } else {
+          document.write("Voto obrigatório!");
+        }
+      } else {
+        document.write("Você não pode votar!");
+      }
+    </script>
+  </body>
+</html>
