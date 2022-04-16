@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX5</title>
+  </head>
+  <body>
+    <script>
+      /*
+      10 + 11 = 21 (x)
+      (x) 21 + 12 = (x)33
+      33 + 13 = 46
+
+
+      */
+      let somaNumeros = 0,
+        numeroIndex = 10;
+      let posicao = 0;
+
+      do {
+        posicao++;
+        numeroIndex++;
+        somaNumeros = numeroIndex + somaNumeros;
+        console.log(`${posicao} - ${somaNumeros}`);
+      } while (numeroIndex < 100);
+    </script>
+  </body>
+</html>
