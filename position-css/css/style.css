@@ -17,23 +17,27 @@ body {
   position: relative;
 }
 
-.quadrado-esquerda {
+.quadrado {
   background-color: rgb(255, 255, 255);
   width: 100px;
   height: 100px;
   margin: 10px;
-
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
 }
-.quadrado-direita {
+.quadrado {
   background-color: rgb(255, 255, 255);
   width: 100px;
   height: 100px;
   margin: 10px;
+}
 
+.direita {
   position: absolute;
   top: 5px;
   right: 5px;
+}
+
+.esquerda {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
 }
