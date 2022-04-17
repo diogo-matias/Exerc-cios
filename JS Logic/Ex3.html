@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex3</title>
+  </head>
+  <body>
+    <script>
+      let l1 = 2;
+      let l2 = 3;
+      let l3 = 5;
+
+      if (l1 < l2 + l3 && l2 < l1 + l3 && l3 < l1 + l2) {
+        let tipo;
+        if (l1 == l2 && l2 == l3) {
+          tipo = "equilátero";
+        } else if (l1 == l2 || l2 == l3) {
+          tipo = "isóceles";
+        } else {
+          tipo = "escaleno";
+        }
+
+        document.write("Pode ser formado um triangulo ", tipo);
+      } else {
+        document.write("Não forma um triangulo");
+      }
+    </script>
+  </body>
+</html>

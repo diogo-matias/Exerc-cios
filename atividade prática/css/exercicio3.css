@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.texto-1 {
+  color: white;
+  padding: 25px;
+  margin: 50px;
+  border-radius: 50px;
+  background-color: rgb(65, 65, 65);
+
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.texto-2 {
+  color: white;
+  height: 100px;
+
+  padding: 25px;
+  margin: 50px;
+
+  background-color: rgb(65, 65, 65);
+
+  overflow: auto;
+}

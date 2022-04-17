@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX3</title>
+  </head>
+  <body>
+    <script>
+      let diaNumero = Number(
+        prompt("Digite um número para ver o dia da semana:")
+      );
+      let diaNome;
+      let diaInvalido = false;
+
+      if (diaNumero == 1) {
+        diaNome = "Domingo";
+      } else if (diaNumero == 2) {
+        diaNome = "Segunda";
+      } else if (diaNumero == 3) {
+        diaNome = "Terça-Feira";
+      } else if (diaNumero == 4) {
+        diaNome = "Quarta-feira";
+      } else if (diaNumero == 5) {
+        diaNome = "Quinta-feira";
+      } else if (diaNumero == 6) {
+        diaNome = "Sexta-feira";
+      } else if (diaNumero == 7) {
+        diaNome = "Sábado";
+      } else {
+        diaInvalido = true;
+        document.write("Dia não reconhecido...");
+      }
+
+      if (diaInvalido === false) {
+        document.write(`${diaNome}`);
+      }
+    </script>
+  </body>
+</html>
