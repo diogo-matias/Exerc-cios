@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX7</title>
+  </head>
+  <body>
+    <script>
+      let idade = prompt("Digite sua idade: ");
+      if (idade >= 18 && idade < 67) {
+        document.write(`Pode doar, pois você tem ${idade} anos de idade.`);
+      } else if (idade < 18) {
+        let idadeQueFalta = 18 - idade;
+        document.write(
+          `Você tem ${idade} anos, mas precisa esperar mais ${idadeQueFalta} anos para poder doar!`
+        );
+      } else {
+        document.write("Você não pode mais doar, devido a idade avançada :(");
+      }
+    </script>
+  </body>
+</html>

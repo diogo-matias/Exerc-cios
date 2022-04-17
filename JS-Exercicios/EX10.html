@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX1O</title>
+  </head>
+  <body>
+    <script>
+      let numero = prompt("VAMO DALE");
+      let soma = numero;
+      let index = 0;
+
+      while (soma < 500) {
+        index++;
+        soma = soma * 3;
+        console.log(`${index}x - ${soma}`);
+      }
+
+      document.write(
+        `O número ${numero} pode ser multiplicado ${
+          index - 1
+        } vezes enquanto a soma é menor que 500.`
+      );
+    </script>
+  </body>
+</html>
