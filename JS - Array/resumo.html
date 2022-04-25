@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESUMO</title>
+  </head>
+  <body>
+    <script>
+      /*
+        INSERT
+        [x] push
+
+        RETRIEVE/ SEARCH
+        [x] filter
+        [x] find
+        [x] includes
+
+        REMOVE
+        [] pop
+        [] splice
+
+        TRANSFORM
+        [] map
+        [] reverse
+
+        LOOP
+        [] foreach (não retorna nada)
+
+        */
+
+      console.log("------ VETOR ORIGINAL ");
+      const array = [
+        {
+          nome: "Diogo",
+          idade: 19,
+          cidade: "Campo Bom",
+        },
+        {
+          nome: "Guilherme",
+          idade: 20,
+          cidade: "Campo Bom",
+        },
+      ];
+      console.log(array);
+
+      // ----------- USANDO PUSH ------------------------
+      console.log("--------------- PUSH ");
+      //  O push altera o array diretamente.
+
+      array.push(
+        { nome: "coloquei com o push" },
+        {
+          nome: "Diogo lindo",
+          idade: 19,
+          cidade: "Nova Yorque",
+        }
+      );
+      console.log(array);
+      console.log(array.map((item, index) => item.nome + " " + index));
+      /* 
+        
+        */
+      // ------------ USANDO FILTER ---------------------------
+      console.log("--------------- FILTER ");
+      //  Cria uma nova array apenas com os itens que retornam verdadeiro
+      arrayFilter = array.filter((item, index) => index <= 1);
+      console.log(arrayFilter);
+      //   Quando a função dentro do filter retornar verdadeira, ele copia o item array[index] para dentro de outra array.
+      /* 
+            
+     */
+      // ------------ USANDO FIND ---------------------------
+      console.log("--------------- FIND ");
+      // É utilizado para encontrar algo. Principipal característica: Ele para no primeiro item que encontrar.
+      // Quando retorna true, ele mostra o item no console.
+      console.log(array.find((item) => item.idade === 19));
+      /* 
+        
+        */
+      // ------------ INCLUDES ---------------------------
+      console.log("--------------- INCLUDES ");
+      // Pega qualquer detalhe: por ex: Maria.includes ("a") == true, pq no nome de maria tem a letra A.
+
+      arrayTeste = [{ nome: "Joao" }, { nome: "Maria" }];
+      console.log("Maria teste - " + arrayTeste[1].nome.includes("Maria"));
+
+      array.forEach((item, index) => {
+        let temDiogo = item.nome.includes("Diogo");
+        console.log(temDiogo + " " + index);
+      });
+      /* 
+        
+        */
+      // ------------ INCLUDES ---------------------------
+    </script>
+  </body>
+</html>

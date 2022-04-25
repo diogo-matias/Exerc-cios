@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let alunos = [
+        {
+          nome: "Pedro",
+          idade: 19,
+          skills: "JavaScript, CSS,",
+        },
+        {
+          nome: "Joao",
+          idade: 15,
+          skills: "JavaScript, CSS, HTML",
+        },
+        {
+          nome: "Cintia",
+          idade: 18,
+          skills: "HTML, CSS ",
+        },
+        {
+          nome: "Gabriela",
+          idade: 17,
+          skills: "HTML, CSS,",
+        },
+        {
+          nome: "Henrique",
+          idade: 21,
+          skills: "CSS,",
+        },
+        {
+          nome: "Jakson",
+          idade: 19,
+          skills: "JavaScript, CSS,",
+        },
+      ];
+
+      function filtrarAluno(array, skill) {
+        const aluno = array.filter((element, index) =>
+          element.skills.includes(skill)
+        );
+        return aluno;
+      }
+
+      console.log(filtrarAluno(alunos, "Java"));
+    </script>
+  </body>
+</html>
