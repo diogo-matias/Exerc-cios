@@ -1,0 +1,28 @@
+* {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-image: url("./imagem.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  background-color: #525252;
+
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin: 50px 30px;
+  text-align: center;
+}

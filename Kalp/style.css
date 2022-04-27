@@ -1,0 +1,21 @@
+* {
+  background-color: rgb(27, 27, 27);
+}
+
+button {
+  margin-bottom: 20px;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(0, 255, 55);
+  cursor: pointer;
+}
+
+h1 {
+  background-color: rgb(0, 255, 55);
+}
+
+.informacoes {
+  background-color: rgb(0, 69, 129);
+  height: 50vh;
+  width: 10wv;
+}
