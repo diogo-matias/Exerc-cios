@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX1</title>
+  </head>
+  <body>
+    <script>
+      const pessoas = [
+        {
+          nome: "Roger Medeiros",
+          sexo: "M",
+          salario: 3250,
+        },
+        {
+          nome: "Carolina Silva",
+          sexo: "F",
+          salario: 1200,
+        },
+        {
+          nome: "Cristina Avila",
+          sexo: "F",
+          salario: 8100,
+        },
+        {
+          nome: "Gustavo Hoffman",
+          sexo: "M",
+          salario: 5200.35,
+        },
+        {
+          nome: "Eva Trindade",
+          sexo: "F",
+          salario: 2501,
+        },
+        {
+          nome: "Andre Mathias",
+          sexo: "M",
+          salario: 1750,
+        },
+        {
+          nome: "Joice Castro da Silva",
+          sexo: "F",
+          salario: 3350.25,
+        },
+      ];
+
+      // Total de pessoas
+      console.log("Total de pessoas: ", pessoas.length);
+
+      // Total de mulheres
+      const sexoFeminino = pessoas.filter((pessoa) => pessoa.sexo === "F");
+      console.log("Total de mulheres: ", sexoFeminino.length);
+
+      // Salario total Solução 1
+      let salarioPessoas = pessoas.map((pessoa) => pessoa.salario);
+      salarioPessoas = salarioPessoas.reduce(
+        (somaSalario, proximoSalario) => somaSalario + proximoSalario
+      );
+      console.log("1 - Salário Total: R$", salarioPessoas);
+
+      // Salario total Solução 2
+      const salarioTotal = pessoas.reduce((p, n) => p + n.salario, 0);
+      console.log(`2 - Salário Total: R$ ${salarioTotal} `);
+
+      // Salário sexo masculino
+      const sexoMasculinos = pessoas.filter((pessoa) => pessoa.sexo === "M");
+      sexoMasculinosSalario = sexoMasculinos.reduce((p, n) => p + n.salario, 0);
+      console.log(`Salário dos homens: ${sexoMasculinosSalario}`);
+
+      // Salário Maior que 7k
+      const salarioMaior7k = pessoas.some((pessoa) => pessoa.salario > 7000);
+      console.log(
+        salarioMaior7k
+          ? "Existe algum salário maior que R$7.000"
+          : "Não existe nenhum salário maior que R$7.000"
+      );
+
+      // índice eva trindade
+      console.log(
+        "Índice Eva Trindade: ",
+        pessoas.findIndex((pessoa) => pessoa.nome === "Eva Trindade")
+      );
+
+      // Criando um novo array com sobrenome silva
+      const sobrenomeSilva = pessoas.filter((pessoa) => {
+        return pessoa.nome.includes("Silva");
+      });
+
+      console.log(
+        `Pessoas com o sobrenome Silva: ${sobrenomeSilva.map(
+          (pessoa) => pessoa.nome
+        )}`
+      );
+    </script>
+  </body>
+</html>

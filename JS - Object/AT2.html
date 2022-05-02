@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EX8</title>
+    <title>AT2</title>
   </head>
   <body>
     <script>
-      let numero = prompt("Digite um numero: ");
+      const notebook = {
+        processador: "i7",
+        memoria: "16 GB",
+        preco: 5000,
+        HD: "1TB",
+        SSD: "256 GB",
+      };
 
-      document.write(`<b>Números Ímpares até ${numero}:  <br></b>`);
-      for (let i = 1; i <= numero; i++) {
-        if (i % 2 !== 0) {
-          document.write(`${i} | `);
-        }
+      for (let propriedade in notebook) {
+        console.log(propriedade + " = " + notebook[propriedade]);
       }
     </script>
   </body>

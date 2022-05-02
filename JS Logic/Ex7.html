@@ -4,16 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ex7</title>
+    <title>Ex8</title>
   </head>
   <body>
     <script>
-      // Equação --> ( °F − 32) × 5/9 = °C
+      // ( °F − 32) × 5/9 = °C
+      let totalEleitores = 200,
+        brancos = 20,
+        nulos = 60,
+        validos = 120;
 
-      let F = parseFloat(prompt("Temperatura em fahrenheit: "));
-      let C = ((F - 32) * 5) / 9;
+      if (totalEleitores === brancos + nulos + validos) {
+        document.write(
+          `<b>Total de Eleitores: ${totalEleitores} </b><br> Votos em branco: ${brancos} | <b>${porcentagem(
+            brancos,
+            totalEleitores
+          )}</b><br> Votos Nulos: ${nulos} | <b>${porcentagem(
+            nulos,
+            totalEleitores
+          )}</b> <br> Votos válidos: ${validos} | <b>${porcentagem(
+            validos,
+            totalEleitores
+          )}</b>`
+        );
+      } else {
+        document.write(
+          "Os números de votos não conferem com o valor total de eleitores!"
+        );
+      }
 
-      document.write(`Equivalente em Celcius: ${C.toFixed(2)}º `);
+      function porcentagem(parte, total) {
+        porcent = Number((parte / total) * 100).toFixed(2);
+        porcent = porcent + "%";
+
+        return porcent;
+      }
     </script>
   </body>
 </html>

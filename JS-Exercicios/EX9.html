@@ -8,14 +8,20 @@
   </head>
   <body>
     <script>
-      let numero = -1;
-      while (numero < 0 || numero > 10) {
-        numero = Number(prompt("Digite um número entre 1 e 10:"));
+      let numero = 0;
+      let media = 0;
+      let somaNumeros = 0;
+      let index = 0;
+
+      for (numero = 13; numero < 73; numero++) {
+        index = index + 1;
+        somaNumeros = somaNumeros + numero;
+        media = somaNumeros / index;
+
+        console.log(somaNumeros);
       }
 
-      for (i = 1; i <= 10; i++) {
-        document.write(`${numero} x ${i} = ${numero * i} <br>`);
-      }
+      document.write(`A média dos numeros e ${media}`);
     </script>
   </body>
 </html>
