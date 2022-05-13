@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        font-family: arial;
+      }
+    </style>
+    <title>FORM</title>
+  </head>
+  <body>
+    <form>
+      <h1>Formulário</h1>
+      <fieldset>
+        <legend><b>Dados pessoais</b></legend>
+        <br />
+        <div>
+          <label for="nome">Nome:</label>
+          <input required type="text" id="nome" name="nome" />
+          <br />
+          <br />
+          <label for="endereco">Endereço: </label>
+          <input required type="text" id="endereco" name="endereco" />
+          <br />
+          <br />
+          <label for="cidade">Cidade: </label>
+          <input required type="text" id="cidade" name="cidade" />
+          <br />
+          <br />
+          <label for="estados">Estado:</label>
+          <select required name="estados" id="estados">
+            <option selected disabled value="">Escolha uma opção</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+          </select>
+        </div>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend><b>Dados profissionais</b></legend>
+        <div>
+          <br />
+          <label for="cargos">Natureza do cargo</label><br />
+
+          <input type="radio" name="cargos" value="gerencia" id="gerencia" />
+          <label for="gerencia">Gerência</label>
+          <input
+            type="radio"
+            name="cargos"
+            value="financeiro"
+            id="financeiro"
+            checked
+          />
+          <label for="financeiro">Financeiro</label>
+          <input type="radio" name="cargos" value="recepcao" id="recepcao" />
+          <label for="recepcao">Recepção </label>
+          <input type="radio" name="cargos" value="administrativo" />
+          <label for="administrativo">Administrativo</label>
+          <input type="radio" name="cargos" value="juridico" id="juridico" />
+          <label for="jurifico">Juridico</label>
+        </div>
+        <br />
+        <div>
+          <label for="interesse">Áreas de interesse</label> <br />
+          <input
+            type="checkbox"
+            name="interesses"
+            id="computacao"
+            value="computacao"
+          />
+          <label for="computacao">Computação</label>
+
+          <input
+            type="checkbox"
+            name="interesses"
+            id="biologia"
+            value="biologia"
+          />
+          <label for="biologia">Biologia</label>
+
+          <input
+            type="checkbox"
+            name="interesses"
+            id="meio-ambiente"
+            value="meio-ambiente"
+          />
+          <label for="meio-ambiente">Meio Ambiente</label>
+
+          <input
+            type="checkbox"
+            name="interesses"
+            id="engenharia"
+            value="engenharia"
+          />
+          <label for="engenharia">Engenharia</label>
+
+          <input
+            type="checkbox"
+            name="interesses"
+            id="historia"
+            value="historia"
+          />
+          <label for="historia">Historia</label>
+        </div>
+        <br />
+        <div>
+          <label for="mini-curriculo">Mini Curriculo</label>
+
+          <textarea
+            name="mini-curriculo"
+            id="mini-curriculo"
+            cols="50"
+            rows="5"
+          ></textarea>
+        </div>
+      </fieldset>
+      <br />
+      <input type="submit" id="submit" value="Submit" />
+      <input type="reset" id="reset" value="Limpar" />
+    </form>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
